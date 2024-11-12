@@ -1,0 +1,55 @@
+/* Đặt các cài đặt mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Căn chỉnh lề cho màn hình lớn hơn (PC) */
+@media (min-width: 768px) {
+    .container {
+        max-width: 800px; /* Giới hạn chiều rộng */
+        margin: 0 auto;
+        border-left: 5px solid #333; /* Thanh lề trái */
+        border-right: 5px solid #333; /* Thanh lề phải */
+    }
+}
+
+/* Thiết kế chung */
+header, main, footer {
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Style cho ảnh bìa */
+.header-image {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Chiều cao tỷ lệ với chiều rộng theo tỷ lệ 16:9 */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    object-fit: cover; /* Giúp hình ảnh cắt đúng phần cần hiển thị nếu không theo tỷ lệ chính xác */
+}
+
+
+footer p {
+    text-align: center;
+    font-size: 14px;
+}
